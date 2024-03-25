@@ -1,90 +1,83 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Personalized Programming Task: The Coffee Shop Simulation
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+### Deadline
+This assignment should be completed and submitted before the next class session.
 
-## Deadline
-This assignment is due before the next scheduled class.
+### Instructions
+Review the course instructions for details on how to complete and submit this assignment.
 
-## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+### Preparation
+- Engage with all materials in Module 2: Looking Inside Classes 
+- Access the course materials either via the provided link on your course platform or directly through the provided URL.
 
-## Preparation
+### Learning Goals
+The goals for this week include:
+* Understanding Java classes
+* Implementing instance fields
+* Crafting a constructor method
+* Developing getters and setters
+* Utilizing the dot operator
+* Outputting to the terminal
+* Implementing the `main` method
+* Understanding scope and variable shadowing
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
+### Troubleshooting Guide
+Should you encounter any issues:
+1. Cross-check with posted questions on the course's issues section.
+2. If your question hasn't been asked yet, post it as a new issue.
+3. Seek assistance during the weekly lab session. Check your schedule for the exact time.
 
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+We encourage you to collaborate with peers but remember to not share your solutions directly.
 
-## Learning Goals
+### Assignment: The Coffee Shop Simulation
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+Welcome to the Java Coffee Shop! Your task is to model a coffee ordering system in Java. Imagine a cozy coffee shop where customers can order their favorite brews, featuring a variety of coffees with different strengths, milk types, sizes, and extra shots.
 
-## Troubleshooting Guide
+#### Exercise 0: Setting the Scene
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+Create a new Java file named `Coffee.java` in the `src` directory. This file will define the `Coffee` class.
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Introduce the concept of a coffee order with basic attributes:
 
-## Assignment Details
+- `String` type (e.g., "Espresso", "Latte")
+- `String` size (e.g., "small", "medium", "large")
+- `boolean` extraShot (true if an extra shot of espresso is added)
+- `boolean` milk (true if milk is added)
+- `String` milkType (e.g., "regular", "soy", "almond")
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+#### Exercise 1: Expanding the Menu
+Now that we've introduced the basic coffee, let's expand our offerings. Create two more coffee objects, bringing our total offerings to three distinct coffees. Print each coffee's details to the console.
 
-### Task 1: Class Creation
+#### Exercise 2: Encapsulating Coffee
+Let's encapsulate our Coffee objects by defining the following fields within the Coffee class, applying the `private` access modifier to each:
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+- `String` type
+- `String` size
+- `boolean` extraShot
+- `boolean` milk
+- `String` milkType
 
-### Task 2: Defining Properties
+Create a constructor and accompanying getters and setters for each field.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+#### Exercise 3: Ordering a Coffee
+Implement a constructor for the Coffee class that permits setting all attributes during object creation. Replace direct field manipulation with constructor utilization and check that everything compiles.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+#### Exercise 4: Printing Coffee Details
+Introduce a method named `printOrderDetails()` that outputs all details of the coffee order to the console.
 
-### Task 3: Spawning Galaxy Pets
+#### Exercise 5: Special Requests
+Embed functionality allowing a customer to request adjustments to their coffee order after it's been created. Implement methods to modify the coffee's size, add an extra shot, or change the milk type. Ensure each method only modifies the relevant attribute and then updates the order details.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+#### Exercise 6: Understanding Scope
+Examine examples of variable shadowing within the context of your Coffee class. Think about the implications for your getters and setters as well as within your constructor.
 
-### Task 4: Encapsulation with Getters and Setters
+### Checklist
+- Create the Coffee class with the specified fields and privacy modifiers.
+- Implement a constructor, getters, and setters for the class.
+- Utilize the constructor to instantiate coffee objects.
+- Devise a method to print coffee order details.
+- Integrate functionality permitting order adjustments.
+- Explore and understand variable shadowing within the class.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
-
-### Task 5: Constructing with Constructors
-
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
-
-### Task 6: Display Information
-
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
-
-### Task 7: The Cosmic Challenge
-
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
-
-### Task 8: Understanding Scope and Shadowing
-
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
-
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+### Bugs and Errors?
+Should you find any errors or issues with this task, please report them by creating a new issue with a title indicative of the task and a brief summary of the problem encountered.
