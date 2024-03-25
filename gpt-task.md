@@ -1,83 +1,65 @@
-# Personalized Programming Task: The Coffee Shop Simulation
+# Animal Clinic Management System
 
-### Deadline
-This assignment should be completed and submitted before the next class session.
+## Deadline
+This assignment should be completed before the next class session.
 
-### Instructions
-Review the course instructions for details on how to complete and submit this assignment.
+## Instructions
+Refer to the [assignments section of the course instructions](https://youruniversity.edu/courses/programming/fall2023/assignments) for details on how to do and submit this task.
 
-### Preparation
-- Engage with all materials in Module 2: Looking Inside Classes 
-- Access the course materials either via the provided link on your course platform or directly through the provided URL.
+## Preparation
+- Read Module 2: *Looking Inside Classes* from the provided course literature or online resource provided by your institution.
+- Ensure you have access to the specified reading material either via the university's learning platform or directly through the given links.
 
-### Learning Goals
-The goals for this week include:
-* Understanding Java classes
-* Implementing instance fields
-* Crafting a constructor method
-* Developing getters and setters
-* Utilizing the dot operator
-* Outputting to the terminal
-* Implementing the `main` method
+## Learning Goals
+By the end of this exercise, you should be comfortable with:
+* Creating classes and objects in Java
+* Utilizing instance fields
+* Implementing constructors
+* Generating getter and setter methods
+* Manipulating object attributes using methods
+* Writing and understanding the `main` method
 * Understanding scope and variable shadowing
 
-### Troubleshooting Guide
-Should you encounter any issues:
-1. Cross-check with posted questions on the course's issues section.
-2. If your question hasn't been asked yet, post it as a new issue.
-3. Seek assistance during the weekly lab session. Check your schedule for the exact time.
+## Assignment Overview
+In this assignment, you are tasked with creating an animal clinic management system. You will model the various entities involved in the management of a veterinary clinic, starting with the most crucial one: animals.
 
-We encourage you to collaborate with peers but remember to not share your solutions directly.
+### Exercise A: Creating the Animal Class
 
-### Assignment: The Coffee Shop Simulation
+1. **Class Creation:** Start by creating a Java file named `Animal.java`. This file will contain the `Animal` class, which will serve as a template for creating different animals treated at the clinic.
 
-Welcome to the Java Coffee Shop! Your task is to model a coffee ordering system in Java. Imagine a cozy coffee shop where customers can order their favorite brews, featuring a variety of coffees with different strengths, milk types, sizes, and extra shots.
+2. **Fields:** Define the following private instance fields within the `Animal` class:
+   - `String` species
+   - `String` name
+   - `int` age
+   - `String` condition
+   - `boolean` cured
 
-#### Exercise 0: Setting the Scene
+3. **Constructor Method:** Implement a constructor method for the `Animal` class. This method should allow setting initial values for the species, name, age, and condition of the animal upon creation.
 
-Create a new Java file named `Coffee.java` in the `src` directory. This file will define the `Coffee` class.
+4. **Getters and Setters:** Generate getter and setter methods for all instance fields. Ensure adherence to naming conventions (`getXXX` for getters and `setXXX` for setters). This facilitates controlled access and modification of the animal attributes.
 
-Introduce the concept of a coffee order with basic attributes:
+### Exercise B: Utilizing Objects
 
-- `String` type (e.g., "Espresso", "Latte")
-- `String` size (e.g., "small", "medium", "large")
-- `boolean` extraShot (true if an extra shot of espresso is added)
-- `boolean` milk (true if milk is added)
-- `String` milkType (e.g., "regular", "soy", "almond")
+1. **Main Method Initiation:** In the `Animal.java` class, add the `main` method. Within this method, demonstrate:
+   - The instantiation of at least three Animal objects with varying attributes.
+   - The use of setter methods to alter the condition of an animal.
+   - Use the getter methods to retrieve and print out the information of each Animal object to the console.
 
-#### Exercise 1: Expanding the Menu
-Now that we've introduced the basic coffee, let's expand our offerings. Create two more coffee objects, bringing our total offerings to three distinct coffees. Print each coffee's details to the console.
+### Exercise C: Clinic Functionality
 
-#### Exercise 2: Encapsulating Coffee
-Let's encapsulate our Coffee objects by defining the following fields within the Coffee class, applying the `private` access modifier to each:
+1. **Treatment Method:** Add a method within the `Animal` class named `treat`. This method should simulate treating the animal's condition, changing its `cured` status to `true`, and updating its condition. It should also print out a message indicating the animal is undergoing treatment.
 
-- `String` type
-- `String` size
-- `boolean` extraShot
-- `boolean` milk
-- `String` milkType
+2. **Patient Information:** Implement a method `printInfo` that prints all relevant information about the animal, including species, name, age, condition, and whether it's cured. This provides a convenient way to display an animal's status.
 
-Create a constructor and accompanying getters and setters for each field.
+### Exercise D: Understanding Scope
+Explore the concepts of scope and variable shadowing through examples similar to what's provided in the model task. Attempt to fix the code snippets where variable shadowing prevents the intended behavior.
 
-#### Exercise 3: Ordering a Coffee
-Implement a constructor for the Coffee class that permits setting all attributes during object creation. Replace direct field manipulation with constructor utilization and check that everything compiles.
+## Submission Checklist
+- Create three `Animal` objects, demonstrating different attributes.
+- Use getter and setter methods to manipulate and display the animals' details.
+- Implement a `treat` method that alters the `cured` status and condition of an animal.
+- Add a `printInfo` method to depict each animal's comprehensive information.
+- Review examples provided on scope and variable shadowing. Understand how to rectify issues arising from shadowing.
 
-#### Exercise 4: Printing Coffee Details
-Introduce a method named `printOrderDetails()` that outputs all details of the coffee order to the console.
-
-#### Exercise 5: Special Requests
-Embed functionality allowing a customer to request adjustments to their coffee order after it's been created. Implement methods to modify the coffee's size, add an extra shot, or change the milk type. Ensure each method only modifies the relevant attribute and then updates the order details.
-
-#### Exercise 6: Understanding Scope
-Examine examples of variable shadowing within the context of your Coffee class. Think about the implications for your getters and setters as well as within your constructor.
-
-### Checklist
-- Create the Coffee class with the specified fields and privacy modifiers.
-- Implement a constructor, getters, and setters for the class.
-- Utilize the constructor to instantiate coffee objects.
-- Devise a method to print coffee order details.
-- Integrate functionality permitting order adjustments.
-- Explore and understand variable shadowing within the class.
-
-### Bugs and Errors?
-Should you find any errors or issues with this task, please report them by creating a new issue with a title indicative of the task and a brief summary of the problem encountered.
+## Errors or Bugs
+Should you encounter any inconsistencies or errors with this assignment, please report them through the course's issue tracker with the title "Exercise: Error - [brief description]". Contributions towards improving the course material are highly appreciated.
